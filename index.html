@@ -1,0 +1,269 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Pakistan</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: #064e3b;
+            color: white;
+            padding: 18px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        header h1 {
+            font-size: 26px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover,
+        nav a[aria-current="page"] {
+            color: #facc15;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 430px;
+            background:
+                linear-gradient(rgba(0, 0, 0, 0.55),
+                                rgba(0, 0, 0, 0.55)),
+                url("https://images.unsplash.com/photo-1587474260584-136574528ed5?auto=format&fit=crop&w=1600&q=80");
+            background-size: cover;
+            background-position: center;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .hero h2 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #facc15;
+            color: #222;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background-color: #eab308;
+        }
+
+        /* About Section */
+        section {
+            padding: 55px 7%;
+        }
+
+        section h2 {
+            text-align: center;
+            color: #064e3b;
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            max-width: 800px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .about img {
+            display: block;
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            margin: 25px auto 0;
+            border-radius: 8px;
+        }
+
+        /* Services */
+        .services {
+            background-color: #f0fdf4;
+        }
+
+        .card-container {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+            flex: 1 1 220px;
+            max-width: 320px;
+            text-align: center;
+        }
+
+        .card h3 {
+            color: #047857;
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #064e3b;
+            color: white;
+            text-align: center;
+            padding: 25px 15px;
+        }
+
+        footer h2 {
+            margin-bottom: 10px;
+        }
+
+        footer a {
+            color: #facc15;
+            text-decoration: none;
+            margin: 0 8px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        footer p {
+            margin: 7px 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav a {
+                margin: 0 7px;
+                display: inline-block;
+            }
+
+            .hero h2 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Explore Pakistan</h1>
+
+        <nav aria-label="Main navigation">
+            <a href="#home" aria-current="page">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero" id="home">
+            <h2>Discover the Beauty of Pakistan</h2>
+            <p>Explore beautiful mountains, historic places and amazing destinations.</p>
+            <a href="#services" class="btn">Explore More</a>
+        </section>
+
+        <section class="about" id="about">
+            <h2>About Us</h2>
+
+            <p>
+                Explore Pakistan is a tourism website that introduces
+                visitors to the natural beauty, culture and historical
+                places of Pakistan. Our goal is to help people discover
+                wonderful destinations and plan memorable journeys.
+            </p>
+
+            <img
+                src="https://images.unsplash.com/photo-1597074866923-dc0589150358?auto=format&fit=crop&w=900&q=80"
+                alt="Beautiful mountain scenery in Pakistan"
+            >
+        </section>
+
+        <section class="services" id="services">
+            <h2>Our Services</h2>
+
+            <div class="card-container">
+
+                <article class="card">
+                    <h3>Travel Guides</h3>
+                    <p>Discover popular destinations and useful travel information.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Tour Planning</h3>
+                    <p>Explore travel ideas for families, students and visitors.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Destination Tips</h3>
+                    <p>Learn about local culture, sightseeing and travel preparation.</p>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="contact">
+        <h2>Contact Us</h2>
+
+        <p>Email: info@example.com</p>
+        <p>Phone: +92 300 1234567</p>
+
+        <p>
+            <a href="https://www.facebook.com/">Facebook</a>
+            <a href="https://www.instagram.com/">Instagram</a>
+        </p>
+
+        <p>&copy; 2026 Explore Pakistan. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
